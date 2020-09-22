@@ -1,0 +1,13 @@
+xpack.ml.enabled: false
+cluster.name: es-hgk
+node.name: node-1
+network.host: 0.0.0.0
+http.port: 9201
+transport.port: 9301
+discovery.seed_hosts: ["127.0.0.1:9301", "127.0.0.1:9302"]
+cluster.initial_master_nodes: ["node-1", "node-2"]
+node.master: true
+node.data: true
+bootstrap.memory_lock: false
+http.cors.enabled: true
+http.cors.allow-origin: "*"
